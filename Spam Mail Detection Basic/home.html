@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spam Email Detector</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>📧 Spam Email Detector</h1>
+        <p>Check if your email is spam or ham (legitimate)</p>
+      </header>
+
+      <main>
+        <div class="detector-section">
+          <textarea
+            id="emailText"
+            placeholder="Paste your email content here..."
+            rows="10"></textarea>
+
+          <button id="analyzeBtn" class="analyze-btn">Analyze Email</button>
+
+          <div id="result" class="result hidden">
+            <div id="resultContent"></div>
+            <div class="confidence">
+              Confidence: <span id="confidenceValue">0%</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="features">
+          <h3>Common Spam Indicators:</h3>
+          <ul>
+            <li>Urgent language and excessive punctuation!!!</li>
+            <li>Requests for personal information</li>
+            <li>Suspicious links and attachments</li>
+            <li>Too-good-to-be-true offers</li>
+            <li>Poor grammar and spelling</li>
+          </ul>
+        </div>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
